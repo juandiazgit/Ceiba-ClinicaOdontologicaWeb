@@ -1,30 +1,10 @@
 
 package com.ceiba.clinicaodontologica.dominio.unitaria;
 
-import com.ceiba.clinicaodontologica.dominio.Cita;
-import com.ceiba.clinicaodontologica.dominio.Paciente;
-import com.ceiba.clinicaodontologica.dominio.excepcion.PacienteException;
-import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
-import com.ceiba.clinicaodontologica.dominio.servicio.cita.ServicioCrearCita;
-import com.ceiba.clinicaodontologica.dominio.servicio.paciente.ServicioObtenerPaciente;
-//import com.ceiba.clinicaodontologica.dominio.repositorio.RepositorioPrestamo;
-//import com.ceiba.clinicaodontologica.dominio.servicio.bibliotecario.ServicioBibliotecario;
-import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
-import com.ceiba.clinicaodontologica.testdatabuilder.PacienteTestDataBuilder;
-import com.ceiba.clinicaodontologica.dominio.Cita;
-//import com.ceiba.clinicaodontologica.dominio.repositorio.RepositorioCita;
-import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
-
-import org.junit.Test;
-import org.mockito.internal.verification.Times;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.when;
 
 import java.lang.reflect.InvocationTargetException;
@@ -35,37 +15,19 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-import javax.validation.constraints.AssertFalse;
+import org.junit.Test;
+
+import com.ceiba.clinicaodontologica.dominio.Cita;
+import com.ceiba.clinicaodontologica.dominio.Paciente;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
+import com.ceiba.clinicaodontologica.dominio.servicio.cita.ServicioCrearCita;
+import com.ceiba.clinicaodontologica.dominio.servicio.paciente.ServicioObtenerPaciente;
+import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
+import com.ceiba.clinicaodontologica.testdatabuilder.PacienteTestDataBuilder;
 
 public class ServicioCrearCitaTest {
     
-//    @Test
-//    public void esSiguienteDiaHabilTest() {
-//        // arrange
-//         String PROCEDIMIENTO = "Ortodoncia";
-//         Date FECHACITA = new Date();
-//    	 RepositorioCita repositorioCita = mock(RepositorioCita.class);
-//    	 ServicioObtenerPaciente servicioObtenerPaciente = mock(ServicioObtenerPaciente.class);
-//    	 ServicioCrearCita servicioCrearCita = new ServicioCrearCita(repositorioCita,servicioObtenerPaciente);
-//         /*Calendar calendario = Calendar.getInstance();
-//         calendario.add(Calendar.DAY_OF_YEAR, 1);
-//         Date sigDiaHabil = calendario.getTime();*/
-//
-//         CitaTestDataBuilder citaTestDataBuilder = new CitaTestDataBuilder().
-//        		 								   conProcedimiento(PROCEDIMIENTO).
-//        		 								   conFechaCita(FECHACITA);
-//         
-//         Cita cita = new CitaTestDataBuilder().build();
-//
-//         // act
-//         servicioCrearCita.ejecutar(cita);
-//
-//        // Asset
-//         //verify(servicioCrearCita.esSabadoDomingo())
-//         verify(servicioCrearCita.esSabadoDomingo(), times(1));
-//        //assertEquals(sigDiaHabil, sigDiaHabilAct);
-//    }
-    
+	@SuppressWarnings("deprecation")
 	@Test
     public void esSabadoDomingo() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
         
@@ -87,7 +49,8 @@ public class ServicioCrearCitaTest {
         assertTrue(resultado);  
     }
     
-    @Test
+    @SuppressWarnings("deprecation")
+	@Test
     public void noEsSabadoDomingo() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
         //Arrange
     	Calendar calendario = Calendar.getInstance();
@@ -106,7 +69,8 @@ public class ServicioCrearCitaTest {
         assertFalse(resultado);  
     }
    
-    @Test
+    @SuppressWarnings("deprecation")
+	@Test
     public void dadoUnDiaHabilRetornarSiguienteDiaHabil() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
         //Arrange
     	Calendar calendario = Calendar.getInstance();
@@ -126,7 +90,8 @@ public class ServicioCrearCitaTest {
         assertEquals(fechaEsperada,resultado);  
     }
     
-    @Test
+    @SuppressWarnings("deprecation")
+	@Test
     public void dadoUnNoDiaHabilRetornarSiguienteDiaHabil() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
         //Arrange
     	Calendar calendario = Calendar.getInstance();
@@ -170,7 +135,8 @@ public class ServicioCrearCitaTest {
         assertFalse(resultado); 
     }
     
-    @Test
+    @SuppressWarnings("deprecation")
+	@Test
     public void siSePuedeAgendarADoctorTest() throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 
     	//Arrange

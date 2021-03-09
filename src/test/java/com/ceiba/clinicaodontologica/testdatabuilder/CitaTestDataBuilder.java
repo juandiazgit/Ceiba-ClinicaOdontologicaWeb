@@ -11,7 +11,8 @@ public class CitaTestDataBuilder {
 	
     private static final String PROCEDIMIENTO = "Ortodoncia";
     //private static final Date FECHACITA = new Date(2021-1900, 2, 8, 13, 40, 12);
-    private static final Date FECHACITA = new Timestamp(new Date(2021-1900, 2, 8, 12, 30, 12).getTime());
+    @SuppressWarnings("deprecation")
+	private static final Date FECHACITA = new Timestamp(new Date(2021-1900, 2, 8, 12, 30, 12).getTime());
     
 	private String procedimiento;
 	private Date fechaCita;

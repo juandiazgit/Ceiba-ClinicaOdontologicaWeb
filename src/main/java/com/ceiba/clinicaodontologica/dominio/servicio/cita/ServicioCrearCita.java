@@ -2,7 +2,6 @@ package com.ceiba.clinicaodontologica.dominio.servicio.cita;
 
 
 import java.sql.Timestamp;
-import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Service;
 
 import com.ceiba.clinicaodontologica.dominio.Cita;
 import com.ceiba.clinicaodontologica.dominio.excepcion.CitaException;
-import com.ceiba.clinicaodontologica.dominio.excepcion.PacienteException;
 import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
 import com.ceiba.clinicaodontologica.dominio.servicio.paciente.ServicioObtenerPaciente;
 

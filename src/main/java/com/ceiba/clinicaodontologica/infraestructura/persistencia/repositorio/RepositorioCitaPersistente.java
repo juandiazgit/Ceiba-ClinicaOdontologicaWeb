@@ -30,14 +30,7 @@ public class RepositorioCitaPersistente implements RepositorioCita {
 	}
 	
 	@Override
-	public Cita obtenerCitaPorCodPaciente(int codioPaciente) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	public String actualizarCitaPorCodPaciente(int codioPaciente, Date fechaCita) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

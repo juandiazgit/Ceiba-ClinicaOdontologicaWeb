@@ -9,8 +9,6 @@ public interface RepositorioCita {
 
 	Cita agregar(Cita cita);
     
-	Cita obtenerCitaPorCodPaciente(int codioPaciente);    
-    
     String actualizarCitaPorCodPaciente(int codioPaciente, Date fechaCita);
     
     List<Cita> obtenerListaCitas();

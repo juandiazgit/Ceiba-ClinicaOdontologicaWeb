@@ -1,7 +1,6 @@
 package com.ceiba.clinicaodontologica.testdatabuilder;
 
 
-import java.util.Calendar;
 import java.util.Date;
 
 import com.ceiba.clinicaodontologica.dominio.Factura;
@@ -11,7 +10,7 @@ public class FacturaTestDataBuilder {
     private static final Date FECHAGENERACION = new Date();
     private static final double VALORPAGAR = 150000; 
     
-    private Date fechaGeneracion;
+	private Date fechaGeneracion;
     private double valorPagar;
 
     public FacturaTestDataBuilder() {

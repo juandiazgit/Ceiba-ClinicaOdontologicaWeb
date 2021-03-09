@@ -1,13 +1,9 @@
 package com.ceiba.clinicaodontologica.infraestructura.persistencia.builder;
 
 import com.ceiba.clinicaodontologica.dominio.Cita;
-import com.ceiba.clinicaodontologica.dominio.Doctor;
 import com.ceiba.clinicaodontologica.dominio.Factura;
-import com.ceiba.clinicaodontologica.dominio.Paciente;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.CitaEntity;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.DoctorEntity;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.FacturaEntity;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.PacienteEntity;
 
 public final class CitaBuilder{
 

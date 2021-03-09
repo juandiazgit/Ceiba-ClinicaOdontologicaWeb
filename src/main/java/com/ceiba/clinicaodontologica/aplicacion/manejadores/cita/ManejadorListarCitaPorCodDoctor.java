@@ -1,14 +1,11 @@
 package com.ceiba.clinicaodontologica.aplicacion.manejadores.cita;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ceiba.clinicaodontologica.dominio.Cita;
-import com.ceiba.clinicaodontologica.dominio.Paciente;
 import com.ceiba.clinicaodontologica.dominio.servicio.cita.ServicioListarCitaPorCodDoctor;
-import com.ceiba.clinicaodontologica.dominio.servicio.paciente.ServicioListarPaciente;
-
-import java.util.List;
 
 @Component
 public class ManejadorListarCitaPorCodDoctor {

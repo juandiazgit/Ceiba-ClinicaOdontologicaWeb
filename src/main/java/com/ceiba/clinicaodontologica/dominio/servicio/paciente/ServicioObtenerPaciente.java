@@ -31,7 +31,7 @@ public class ServicioObtenerPaciente {
 			}
 		}
 		
-		if (listaPacientes.size() == 0) {
+		if (listaPacientes.isEmpty()) {
 			throw new PacienteException(PACIENTE_NO_ENCONTRADA);
 		}
                 

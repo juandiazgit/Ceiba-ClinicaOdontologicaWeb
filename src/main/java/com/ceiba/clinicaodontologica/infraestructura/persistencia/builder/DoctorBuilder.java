@@ -1,9 +1,7 @@
 package com.ceiba.clinicaodontologica.infraestructura.persistencia.builder;
 
 import com.ceiba.clinicaodontologica.dominio.Doctor;
-import com.ceiba.clinicaodontologica.dominio.Paciente;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.DoctorEntity;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.PacienteEntity;
 
 public final class DoctorBuilder{
 

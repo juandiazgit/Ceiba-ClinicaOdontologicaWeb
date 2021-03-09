@@ -8,13 +8,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
 
 @Entity(name = "Factura")
-//@NamedQuery(name = "Factura.findById", query = "SELECT factura from Factura factura where doctor.fac_id = :fac_id")
 public class FacturaEntity implements Serializable{
 
-    @Id
+	private static final long serialVersionUID = 1L;
+
+	@Id
     @Column(name = "fac_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
