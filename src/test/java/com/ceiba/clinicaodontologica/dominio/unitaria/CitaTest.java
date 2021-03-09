@@ -16,9 +16,9 @@ import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
 @RunWith(SpringJUnit4ClassRunner.class)
 public class CitaTest {
 
-    private static final String PROCEDIMIENTO = "Ortodoncia";
+    private static final String PROCEDIMIENTO = "ORTODONCIA";
     @SuppressWarnings("deprecation")
-	private static final Date FECHACITA = new Date(2021-1900, 2, 8, 12, 30, 12);
+	private static final Date FECHACITA = new Date(2021-1900, 2, 16, 12, 30, 12);
     
     @Test
     public void crearCitaTest() {

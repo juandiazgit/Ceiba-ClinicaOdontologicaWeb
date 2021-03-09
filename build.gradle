@@ -38,3 +38,6 @@ jacocoTestReport {
 		html.enabled true
 	}
 }
+test {
+	finalizedBy jacocoTestReport
+}
