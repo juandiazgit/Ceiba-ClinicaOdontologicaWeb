@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Cita {
 
-	private String procedimiento;
+	private String procedimiento;//Enum
 	private Date fechaCita;
 	private Paciente paciente;
 	private Doctor doctor;
@@ -12,6 +12,7 @@ public class Cita {
 
 	public Cita(String procedimiento, Date fechaCita, Paciente paciente, Doctor doctor,
 			    Factura factura) {
+		//Validaciones()
 		this.procedimiento = procedimiento;
 		this.fechaCita = fechaCita;
 		this.paciente = paciente;

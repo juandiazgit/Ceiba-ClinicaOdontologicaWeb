@@ -1,4 +1,4 @@
-package com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio;
+package com.ceiba.clinicaodontologica.dominio.persistencia.repositorio;
 
 import java.util.List;
 

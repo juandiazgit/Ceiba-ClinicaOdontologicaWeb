@@ -11,9 +11,9 @@ import java.util.List;
 import org.junit.Test;
 
 import com.ceiba.clinicaodontologica.dominio.Cita;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
 import com.ceiba.clinicaodontologica.dominio.servicio.cita.ServicioListarCitaPorCodDoctor;
 import com.ceiba.clinicaodontologica.dominio.servicio.cita.ServicioListarCitaPorCodPaciente;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.RepositorioCita;
 import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
 
 public class ServicioListarCitaPorCodPacienteTest {

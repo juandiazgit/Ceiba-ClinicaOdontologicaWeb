@@ -33,7 +33,7 @@ public class CitaEntity implements Serializable{
 	@Column(name = "cit_fecha")
 	private Date fechaCita;
 	
-	@ManyToOne(cascade = {CascadeType.ALL})
+	@ManyToOne(fetch = FetchType.LAZY)//(cascade = {CascadeType.ALL})
     @JoinColumn(name = "cit_paccod", referencedColumnName = "pac_cod")
     private PacienteEntity paciente;
 

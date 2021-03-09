@@ -45,33 +45,34 @@ package com.ceiba.clinicaodontologica.infraestructura;
 //                .content(objectMapper.writeValueAsString(comandoCita))
 //                .contentType(MediaType.APPLICATION_JSON)
 //                .accept(MediaType.APPLICATION_JSON))
-//                .andExpect(status().is5xxServerError());
+//                .andExpect(status().isOk());
+//        //Verificar.
 //    }
 //    
-//  @Test
-//  public void getCitaPorCodDoctor() throws Exception {
+//	  @Test
+//	  public void getCitaPorCodDoctor() throws Exception {
+//		  
+//		  final int CODIGO_DOCTOR = 1010;
+//		  
+//	      mvc.perform(MockMvcRequestBuilders
+//	              .get("/citas/Doctor/{codDoctor}", CODIGO_DOCTOR)
+//	              .accept(MediaType.APPLICATION_JSON))
+//	              .andDo(print())
+//	              .andExpect(status().isOk())
+//	              .andExpect(MockMvcResultMatchers.jsonPath("$[0].doctor.codigo").value(CODIGO_DOCTOR));
+//	  }
 //	  
-//	  final int CODIGO_DOCTOR = 1010;
-//	  
-//      mvc.perform(MockMvcRequestBuilders
-//              .get("/citas/Doctor/{codDoctor}", CODIGO_DOCTOR)
-//              .accept(MediaType.APPLICATION_JSON))
-//              .andDo(print())
-//              .andExpect(status().isOk())
-//              .andExpect(MockMvcResultMatchers.jsonPath("$[0].doctor.codigo").value(CODIGO_DOCTOR));
-//  }
-//  
-//  @Test
-//  public void getCitaPorCodPaciente() throws Exception {
-//	  
-//	  final int CODIGO_PACIENTE = 2020;
-//	  
-//      mvc.perform(MockMvcRequestBuilders
-//              .get("/citas/Paciente/{codPaciente}", CODIGO_PACIENTE)
-//              .accept(MediaType.APPLICATION_JSON))
-//              .andDo(print())
-//              .andExpect(status().isOk())
-//              .andExpect(MockMvcResultMatchers.jsonPath("$[0].paciente.codigo").value(CODIGO_PACIENTE));
-//  }
+//	  @Test
+//	  public void getCitaPorCodPaciente() throws Exception {
+//		  
+//		  final int CODIGO_PACIENTE = 2020;
+//		  
+//	      mvc.perform(MockMvcRequestBuilders
+//	              .get("/citas/Paciente/{codPaciente}", CODIGO_PACIENTE)
+//	              .accept(MediaType.APPLICATION_JSON))
+//	              .andDo(print())
+//	              .andExpect(status().isOk())
+//	              .andExpect(MockMvcResultMatchers.jsonPath("$[0].paciente.codigo").value(CODIGO_PACIENTE));
+//	  }
 //  
 //}

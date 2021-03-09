@@ -12,8 +12,8 @@ import org.springframework.stereotype.Service;
 import com.ceiba.clinicaodontologica.dominio.Cita;
 import com.ceiba.clinicaodontologica.dominio.excepcion.CitaException;
 import com.ceiba.clinicaodontologica.dominio.excepcion.PacienteException;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
 import com.ceiba.clinicaodontologica.dominio.servicio.paciente.ServicioObtenerPaciente;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.RepositorioCita;
 
 @Service
 public class ServicioCrearCita {

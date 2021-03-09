@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.ceiba.clinicaodontologica.dominio.Paciente;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioPaciente;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.builder.PacienteBuilder;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.PacienteEntity;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.jpa.RepositorioPacienteJPA;

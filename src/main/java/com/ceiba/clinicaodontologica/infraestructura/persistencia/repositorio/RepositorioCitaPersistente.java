@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ceiba.clinicaodontologica.dominio.Cita;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioCita;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.builder.CitaBuilder;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.CitaEntity;
 import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.jpa.RepositorioCitaJPA;

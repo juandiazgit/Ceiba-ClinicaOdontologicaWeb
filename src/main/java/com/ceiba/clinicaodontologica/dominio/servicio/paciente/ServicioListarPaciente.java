@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.ceiba.clinicaodontologica.dominio.Paciente;
-import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.RepositorioPaciente;
+import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioPaciente;
 
 @Service
 public class ServicioListarPaciente {
