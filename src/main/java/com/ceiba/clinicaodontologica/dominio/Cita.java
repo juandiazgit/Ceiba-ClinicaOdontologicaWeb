@@ -7,7 +7,7 @@ public class Cita {
 
 	private static final String INGRESAR_PROCEDIMIENTO = "Se debe ingresar el procedimiento";
 	private static final String INGRESAR_PROCEDIMIENTO_VALIDO = "Se debe ingresar un procedimiento valido";
-	private static final String INGRESAR_FECHA_CITA = "Se debe ingresar una fecha valida para la cita";
+	private static final String INGRESAR_FECHA_CITA = "Se debe ingresar una fecha para la cita";
 	private static final String INGRESAR_PACIENTE = "Se debe ingresar el paciente";
 	private static final String INGRESAR_DOCTOR = "Se debe ingresar el doctor";
 	
@@ -16,7 +16,7 @@ public class Cita {
 	private Paciente paciente;
 	private Doctor doctor;
 	private Factura factura;
-
+	
 	public Cita(String procedimiento, Date fechaCita, Paciente paciente, Doctor doctor,
 			    Factura factura) {
 		ValidarParametro.validarObligatorio(procedimiento, INGRESAR_PROCEDIMIENTO);
@@ -31,7 +31,7 @@ public class Cita {
 		this.doctor = doctor;
 		this.factura = factura;
 	}
-
+	
 	public String getProcedimiento() {
 		return procedimiento;
 	}

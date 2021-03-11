@@ -16,7 +16,7 @@ public class ValidarParametro {
 	}
 
 	public static void validarFecha(Date fecha, String mensajeException) {
-		if (fecha.getTime() < new Date().getTime()) {
+		if (fecha == null) {
 			throw new CitaException(mensajeException);
 		}
 	}

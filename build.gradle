@@ -30,6 +30,16 @@ dependencies {
 	testCompile 'junit:junit:4.12'
 	testCompile 'org.mockito:mockito-all:1.10.19'
 	testCompile 'junit:junit:4.12'
+	
+	testCompile "org.flywaydb:flyway-core:5.2.1"
+	testCompile "org.flywaydb.flyway-test-extensions:flyway-spring-test:5.2.1"
+	testCompile "com.h2database:h2:1.4.194"
+
+	//testImplementation project.ext.h2
+	//testImplementation project.ext.springboottest
+	//compile project.ext.springbootjdbc
+	//runtimeOnly project.ext.db
+	//testImplementation project.ext.flywaytest	
 }
 jacocoTestReport {
 	

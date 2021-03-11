@@ -28,7 +28,7 @@ public class CitaEntity implements Serializable{
 	@Column(name = "cit_fecha")
 	private Date fechaCita;
 	
-	@ManyToOne(cascade = {CascadeType.ALL})//(fetch = FetchType.LAZY)
+	@ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "cit_paccod", referencedColumnName = "pac_cod")
     private PacienteEntity paciente;
 
@@ -36,7 +36,7 @@ public class CitaEntity implements Serializable{
     @JoinColumn(name = "cit_doccod", referencedColumnName = "doc_cod")
     private DoctorEntity doctor;
     
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "cit_facid", referencedColumnName = "fac_id")
     private FacturaEntity factura;
 

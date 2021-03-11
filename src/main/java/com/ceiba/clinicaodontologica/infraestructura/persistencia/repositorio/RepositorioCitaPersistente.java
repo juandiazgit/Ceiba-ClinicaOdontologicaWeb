@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,8 +17,10 @@ import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.jp
 @Repository
 public class RepositorioCitaPersistente implements RepositorioCita {
 	
+	
 	private final RepositorioCitaJPA repositorioCitaJPA;
 	
+	@Autowired
 	public RepositorioCitaPersistente(RepositorioCitaJPA repositorioCitaJPA) {
 		this.repositorioCitaJPA = repositorioCitaJPA;
 	}

@@ -12,7 +12,7 @@ import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.Repositori
 @Service
 public class ServicioObtenerPaciente {
 
-    public static final String 	PACIENTE_NO_ENCONTRADA = "El paciente no se encuentra registrado.";
+    public static final String 	PACIENTE_NO_ENCONTRADO = "El paciente no se encuentra registrado.";
 
     private final RepositorioPaciente repositorioPaciente;
 
@@ -32,7 +32,7 @@ public class ServicioObtenerPaciente {
 		}
 		
 		if (listaPacientes.isEmpty()) {
-			throw new PacienteException(PACIENTE_NO_ENCONTRADA);
+			throw new PacienteException(PACIENTE_NO_ENCONTRADO);
 		}
                 
         return listaPacientes.get(0);

@@ -3,6 +3,7 @@ package com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.ceiba.clinicaodontologica.dominio.Paciente;
@@ -14,6 +15,7 @@ import com.ceiba.clinicaodontologica.infraestructura.persistencia.repositorio.jp
 @Repository
 public class RepositorioPacientePersistente implements RepositorioPaciente {
 
+	@Autowired
 	private final RepositorioPacienteJPA repositorioPacienteJPA;
 	
 	public RepositorioPacientePersistente(RepositorioPacienteJPA repositorioPacienteJPA) {
