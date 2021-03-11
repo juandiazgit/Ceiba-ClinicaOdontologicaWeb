@@ -23,8 +23,6 @@ import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(SpringRunner.class)
-//@ContextConfiguration(classes= ApplicationMock.class)
-//@WebMvcTest(ControladorCita.class)
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 @SpringBootTest

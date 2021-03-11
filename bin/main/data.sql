@@ -15,12 +15,14 @@ INSERT INTO paciente(
 	VALUES (2, 2020, 'Camila', 'Bermudez', 32, 312665464);	
 	
 --Factura --H2
-/*INSERT INTO factura(
+/*
+ INSERT INTO factura(
 	fac_id, fac_fecha, fac_valor)
 	VALUES (1, '2021-02-03', 50000);
 INSERT INTO factura(
 	fac_id, fac_fecha, fac_valor)
-	VALUES (2, '2021-03-03', 80000);*/
+	VALUES (2, '2021-03-03', 80000);
+*/
 	
 --Cita--H2
 INSERT INTO cita(
