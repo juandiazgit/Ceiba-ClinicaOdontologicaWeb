@@ -33,7 +33,7 @@ public class ValidarParametro {
 				return;
 			}
 		} catch (Exception e) {
-			throw new CitaException(mensajeException);
+			throw new CitaException(mensajeException+" : "+e.getMessage());
 		}
 	}
 	
