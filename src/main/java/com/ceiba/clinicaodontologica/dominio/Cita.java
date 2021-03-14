@@ -17,6 +17,8 @@ public class Cita {
 	private Doctor doctor;
 	private Factura factura;
 	
+	public Cita() {}
+	
 	public Cita(String procedimiento, Date fechaCita, Paciente paciente, Doctor doctor,
 			    Factura factura) {
 		ValidarParametro.validarObligatorio(procedimiento, INGRESAR_PROCEDIMIENTO);

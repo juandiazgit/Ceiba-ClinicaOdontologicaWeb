@@ -9,6 +9,10 @@ import com.ceiba.clinicaodontologica.dominio.Paciente;
 
 public class ComandoCita extends Cita{
 	
+	public ComandoCita() {
+		super();
+	}
+	
 	public ComandoCita(String procedimiento, Date fechaCita, Paciente paciente, Doctor doctor,
 			Factura factura) {
 		super(procedimiento,fechaCita,paciente,doctor,factura);
