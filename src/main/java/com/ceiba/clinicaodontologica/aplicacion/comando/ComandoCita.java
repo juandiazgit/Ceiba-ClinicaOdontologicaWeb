@@ -38,11 +38,11 @@ public class ComandoCita {
 	}
 
 	public Date getFechaCita() {
-		return fechaCita;
+		return (Date) fechaCita.clone();
 	}
 
 	public void setFechaCita(Date fechaCita) {
-		this.fechaCita = fechaCita;
+		this.fechaCita = (Date) fechaCita.clone();
 	}
 
 	public Paciente getPaciente() {
