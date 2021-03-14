@@ -20,13 +20,12 @@ public final class CitaBuilder{
 				citaEntity.getFactura().getValorPagar());
 		}
 		
-		if (citaEntity != null) {
-			cita = new Cita(citaEntity.getProcedimiento(),
-							citaEntity.getFechaCita(), 
-							PacienteBuilder.convertirADominio(citaEntity.getPaciente()),
-							DoctorBuilder.convertirADominio(citaEntity.getDoctor()), 
-							factura);
-		}
+		cita = new Cita(citaEntity.getProcedimiento(),
+						citaEntity.getFechaCita(), 
+						PacienteBuilder.convertirADominio(citaEntity.getPaciente()),
+						DoctorBuilder.convertirADominio(citaEntity.getDoctor()), 
+						factura);
+
 		return cita;
 	}
 
