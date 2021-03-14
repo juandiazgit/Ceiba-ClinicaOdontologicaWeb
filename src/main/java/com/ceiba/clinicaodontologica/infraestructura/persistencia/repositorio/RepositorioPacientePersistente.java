@@ -40,8 +40,8 @@ public class RepositorioPacientePersistente implements RepositorioPaciente {
 	@Override
 	@Transactional
 	public Paciente agregar(Paciente paciente) {
-        PacienteEntity PacientePersistido = repositorioPacienteJPA.save(PacienteBuilder.convertirAEntity(paciente));
-        return PacienteBuilder.convertirADominio(PacientePersistido);
+        PacienteEntity pacientePersistido = repositorioPacienteJPA.save(PacienteBuilder.convertirAEntity(paciente));
+        return PacienteBuilder.convertirADominio(pacientePersistido);
 	}
 
 	@Override

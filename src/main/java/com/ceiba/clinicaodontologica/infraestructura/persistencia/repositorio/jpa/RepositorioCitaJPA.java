@@ -8,7 +8,4 @@ import com.ceiba.clinicaodontologica.infraestructura.persistencia.entidad.CitaEn
 @Repository
 public interface RepositorioCitaJPA extends CrudRepository<CitaEntity, Long> {
 	
-//	@Query("Sentence")
-//	List<CitaEntity> findByCodDoctor(String name);
-	
 }
