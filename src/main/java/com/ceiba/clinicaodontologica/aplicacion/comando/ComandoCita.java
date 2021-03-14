@@ -8,61 +8,10 @@ import com.ceiba.clinicaodontologica.dominio.Factura;
 import com.ceiba.clinicaodontologica.dominio.Paciente;
 
 public class ComandoCita extends Cita{
-
-	private String procedimiento;
-
-	private Date fechaCita;
-
-	private Paciente paciente;
-
-	private Doctor doctor;
-
-	private Factura factura;
-
-//	public ComandoCita() {}
 	
 	public ComandoCita(String procedimiento, Date fechaCita, Paciente paciente, Doctor doctor,
 			Factura factura) {
 		super(procedimiento,fechaCita,paciente,doctor,factura);
 	}
 
-//	public String getProcedimiento() {
-//		return procedimiento;
-//	}
-//
-//	public void setProcedimiento(String procedimiento) {
-//		this.procedimiento = procedimiento;
-//	}
-//
-//	public Date getFechaCita() {
-//		return (Date) fechaCita.clone();
-//	}
-//
-//	public void setFechaCita(Date fechaCita) {
-//		this.fechaCita = (Date) fechaCita.clone();
-//	}
-//
-//	public Paciente getPaciente() {
-//		return paciente;
-//	}
-//
-//	public void setPaciente(Paciente paciente) {
-//		this.paciente = paciente;
-//	}
-//
-//	public Doctor getDoctor() {
-//		return doctor;
-//	}
-//
-//	public void setDoctor(Doctor doctor) {
-//		this.doctor = doctor;
-//	}
-//
-//	public Factura getFactura() {
-//		return factura;
-//	}
-//
-//	public void setFactura(Factura factura) {
-//		this.factura = factura;
-//	}
 }
