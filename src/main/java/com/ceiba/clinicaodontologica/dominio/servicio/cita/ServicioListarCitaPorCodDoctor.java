@@ -30,7 +30,7 @@ public class ServicioListarCitaPorCodDoctor {
 			}
 		}
 		
-		if (listaCitas.size() == 0) {
+		if (listaCitas.isEmpty()) {
 			throw new CitaException(EL_DOCTOR_NO_TIENE_CITA);
 		}
                 

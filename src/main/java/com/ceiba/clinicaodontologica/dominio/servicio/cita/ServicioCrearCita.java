@@ -69,12 +69,14 @@ public class ServicioCrearCita {
 	}
 	
 	private boolean esSabadoDomingo(Calendar calendario) {
-
+		
+		boolean esSabDom = false; 
+		
 		if (calendario.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY || 
 		    calendario.get(Calendar.DAY_OF_WEEK) == Calendar.SUNDAY){
-			return true;
+			esSabDom = true;
 		}
-		return false;
+		return esSabDom;
 	}
 	
 	private boolean sePuedeAgendarADoctor(Cita cita) {

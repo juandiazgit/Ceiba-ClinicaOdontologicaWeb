@@ -30,7 +30,7 @@ public class ServicioListarCitaPorCodPaciente {
 			}
 		}
 		
-		if (listaCitas.size() == 0) {
+		if (listaCitas.isEmpty()) {
 			throw new CitaException(EL_PACIENTE_NO_TIENE_CITA);
 		}
                 
