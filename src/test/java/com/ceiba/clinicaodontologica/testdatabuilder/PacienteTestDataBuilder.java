@@ -1,6 +1,7 @@
 package com.ceiba.clinicaodontologica.testdatabuilder;
 
 
+import com.ceiba.clinicaodontologica.aplicacion.comando.ComandoPaciente;
 import com.ceiba.clinicaodontologica.dominio.Paciente;
 
 public class PacienteTestDataBuilder {
@@ -53,4 +54,8 @@ public class PacienteTestDataBuilder {
     public Paciente build() {
         return new Paciente(codigo, nombre, apellido, edad, telefono);
     }
+    
+	public ComandoPaciente buildComando() {
+		return new ComandoPaciente(codigo, nombre, apellido, edad, telefono);
+	}
 }

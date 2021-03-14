@@ -15,6 +15,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import com.ceiba.clinicaodontologica.aplicacion.comando.ComandoPaciente;
+import com.ceiba.clinicaodontologica.testdatabuilder.PacienteTestDataBuilder;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @RunWith(SpringRunner.class)
@@ -40,7 +42,7 @@ public class ControladorPacienteTest {
 	            .andDo(print())
 	            .andExpect(status().isOk())
 	            .andExpect(MockMvcResultMatchers.jsonPath("$[0].codigo").value(CODIGO_PACIENTE));
-	  }
+	}
 	
 	@Test
 	public void getListaCitaPorCodPaciente() throws Exception {
@@ -62,6 +64,28 @@ public class ControladorPacienteTest {
 	        .andExpect(MockMvcResultMatchers.jsonPath("$.apellido").value(APELLIDO))
 	        .andExpect(MockMvcResultMatchers.jsonPath("$.edad").value(EDAD))
 	        .andExpect(MockMvcResultMatchers.jsonPath("$.telefono").value(TELEFONO));
+	}
+	
+    @Test
+    public void registrarPacienteTest() throws Exception {
+    	
+    	final int CODIGO = 2233;
+    	final String NOMBRE = "Paula";
+    	final String APELLIDO = "Casarez";
+    	final Integer EDAD = 25;
+    	final String TELEFONO = "32154679";
+        
+        ComandoPaciente comandoPaciente = new PacienteTestDataBuilder().conCodigo(CODIGO).
+        													conNombre(NOMBRE).
+        													conApellido(APELLIDO).
+        													conEdad(EDAD).
+        													conTelefono(TELEFONO).buildComando();
+        mvc.perform(MockMvcRequestBuilders
+                .post("/pacientes")
+                .content(objectMapper.writeValueAsString(comandoPaciente))
+                .contentType(MediaType.APPLICATION_JSON)
+                .accept(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
 	}
 	
 }

@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ceiba.clinicaodontologica.dominio.Paciente;
 import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.RepositorioPaciente;
@@ -34,6 +35,26 @@ public class RepositorioPacientePersistente implements RepositorioPaciente {
         repositorioPacienteJPA.findAll().forEach(pacienteEntity ->
         listaPacientes.add(PacienteBuilder.convertirADominio(pacienteEntity)));
         return listaPacientes;
+	}
+
+	@Override
+	@Transactional
+	public Paciente agregar(Paciente paciente) {
+        PacienteEntity PacientePersistido = repositorioPacienteJPA.save(PacienteBuilder.convertirAEntity(paciente));
+        return PacienteBuilder.convertirADominio(PacientePersistido);
+	}
+
+	@Override
+	public Paciente obtenerByCodigo(int codigo) {
+		
+		PacienteEntity pacienteEntity = repositorioPacienteJPA.findByCodigo(codigo);
+		
+		if (pacienteEntity == null) {
+			return null;
+		}else {
+			return PacienteBuilder.convertirADominio(pacienteEntity);
+		}
+		
 	}
 	
 }

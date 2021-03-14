@@ -80,5 +80,5 @@ public class ControladorCitaTest {
 	            .andExpect(status().isOk())
 	            .andExpect(MockMvcResultMatchers.jsonPath("$[0].paciente.codigo").value(CODIGO_PACIENTE));
 	  }
-
+	
 }

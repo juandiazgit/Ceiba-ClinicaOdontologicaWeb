@@ -12,7 +12,7 @@ import com.ceiba.clinicaodontologica.dominio.persistencia.repositorio.Repositori
 @Service
 public class ServicioObtenerPaciente {
 
-    public static final String 	PACIENTE_NO_ENCONTRADO = "El paciente no se encuentra registrado.";
+    public static final String PACIENTE_NO_ENCONTRADO = "El paciente no se encuentra registrado.";
 
     private final RepositorioPaciente repositorioPaciente;
 

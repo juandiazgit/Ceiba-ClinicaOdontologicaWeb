@@ -9,10 +9,10 @@ INSERT INTO doctor(
 --Paciente
 INSERT INTO paciente(
 	pac_id, pac_cod, pac_nom, pac_apell, pac_edad, pac_tel)
-	VALUES (1, 1010, 'David', 'Vanegas', 29, 312654664);
+	VALUES (2, 1010, 'David', 'Vanegas', 29, 312654664);
 INSERT INTO paciente(
 	pac_id, pac_cod, pac_nom, pac_apell, pac_edad, pac_tel)
-	VALUES (2, 2020, 'Camila', 'Bermudez', 32, 312665464);	
+	VALUES (3, 2020, 'Camila', 'Bermudez', 32, 312665464);	
 	
 --Factura --H2
 /*

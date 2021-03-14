@@ -1,19 +1,13 @@
 
 package com.ceiba.clinicaodontologica.dominio.unitaria;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
-import java.sql.Timestamp;
-import java.util.Date;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.ceiba.clinicaodontologica.dominio.Cita;
 import com.ceiba.clinicaodontologica.dominio.Paciente;
-import com.ceiba.clinicaodontologica.testdatabuilder.CitaTestDataBuilder;
 import com.ceiba.clinicaodontologica.testdatabuilder.PacienteTestDataBuilder;
 
 @RunWith(SpringJUnit4ClassRunner.class)
