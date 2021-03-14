@@ -29,7 +29,10 @@ public class FacturaTestDataBuilder {
     }
 
     public Factura build() {
-        //return new Factura(fechaGeneracion, valorPagar);
     	return null;
+    }
+    
+    public Factura build2() {
+    	return new Factura(fechaGeneracion, valorPagar);
     }
 }
