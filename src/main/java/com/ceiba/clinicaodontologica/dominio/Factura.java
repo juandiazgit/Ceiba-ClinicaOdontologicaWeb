@@ -17,16 +17,16 @@ public class Factura {
     	ValidarParametro.validarFecha(fechaGeneracion, INGRESAR_FECHA_GENERACION);
     	ValidarParametro.validarValor(valorPagar, INGRESAR_VALOR_PAGAR);
     	
-		this.fechaGeneracion = fechaGeneracion;
+		this.fechaGeneracion = (Date) fechaGeneracion.clone();
 		this.valorPagar = valorPagar;
 	}
 
 	public Date getFechaGeneracion() {
-		return fechaGeneracion;
+		return (Date) fechaGeneracion.clone();
 	}
 
 	public void setFechaGeneracion(Date fechaGeneracion) {
-		this.fechaGeneracion = fechaGeneracion;
+		this.fechaGeneracion = (Date) fechaGeneracion.clone();
 	}
 
 	public double getValorPagar() {
