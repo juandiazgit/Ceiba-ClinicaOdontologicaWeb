@@ -26,7 +26,7 @@ public class FacturaEntity implements Serializable{
     private double valorPagar;
    
 	public FacturaEntity(Date fechaGeneracion, double valorPagar) {
-		this.fechaGeneracion = fechaGeneracion;
+		this.fechaGeneracion = (Date) fechaGeneracion.clone();
 		this.valorPagar = valorPagar;
 	}
 
@@ -39,11 +39,11 @@ public class FacturaEntity implements Serializable{
 	}
 
 	public Date getFechaGeneracion() {
-		return fechaGeneracion;
+		return (Date) fechaGeneracion.clone();
 	}
 
 	public void setFechaGeneracion(Date fechaGeneracion) {
-		this.fechaGeneracion = fechaGeneracion;
+		this.fechaGeneracion = (Date) fechaGeneracion.clone();
 	}
 
 	public double getValorPagar() {
